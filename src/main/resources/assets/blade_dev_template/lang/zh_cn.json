@@ -1,0 +1,10 @@
+{
+  // 这是一个示例语言文件，您可以根据需要进行修改和扩展。
+  "item_group.blade_dev_template.tab": "「示例拔刀剑创造物品栏」",
+  "item.blade_dev_template.template": "§b「示例拔刀剑qwq~」",
+  "blade_dev_template.sword_type.example": "示例",
+  "blade_dev_template.sword_type.example_2": "示例2",
+
+  "slash_art.blade_dev_template.template": "§l示例SA",
+  "se.blade_dev_template.heal": "§l治愈捏"
+}

@@ -1,0 +1,41 @@
+#这是一个mods.toml文件的示例，包含了模组的基本信息和依赖关系。请根据你的模组实际情况修改以下内容：
+#部分变量无需修改，其已经在build.gradle中定义了会自动替换成gradle.properties对应的值。
+modLoader = "javafml" #必填
+loaderVersion = "${loader_version_range}" #必填
+license = "${mod_license}" #可选，开源协议
+#issueTrackerURL=""
+[[mods]] #必填
+modId = "${mod_id}" #必填
+version = "${mod_version}" #必填
+displayName = "${mod_name}" #必填
+authors = "${mod_authors}" #可选
+credits="Furia, 0999312, Arcomit" #可选，鸣谢
+#displayURL = ""
+logoFile= "../logo.png"
+description = '''
+这里写你的MOD描述。
+这是一个拔刀剑附属模组开发模板模组。
+'''
+
+#拔刀剑：重锋(前置)
+[[dependencies."${mod_id}"]]
+modId = "slashblade"
+mandatory = true
+versionRange = "[1.1.44,)"
+ordering = "NONE"
+side = "BOTH"
+
+#Forge(前置)
+[[dependencies."${mod_id}"]] #optional
+modId = "forge" #mandatory
+mandatory = true #mandatory
+versionRange = "${forge_version_range}" #mandatory
+ordering = "NONE"
+side = "BOTH"
+#Minecraft(前置)
+[[dependencies."${mod_id}"]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"

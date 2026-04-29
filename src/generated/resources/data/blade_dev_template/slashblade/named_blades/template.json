@@ -1,0 +1,32 @@
+{
+  "creativeGroup": "blade_dev_template:blade_dev_template_tab",
+  "enchantments": [
+    {
+      "id": "minecraft:power",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 4
+    }
+  ],
+  "item": "blade_dev_template:dev_template_blade",
+  "name": "blade_dev_template:template",
+  "properties": {
+    "max_damage": 999,
+    "slash_art": "blade_dev_template:template",
+    "special_effects": [
+      "blade_dev_template:heal",
+      "slashblade:wither_edge"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "blade_dev_template:model/blade/template.obj",
+    "summon_sword_color": -16776961,
+    "texture": "blade_dev_template:model/blade/template.png"
+  }
+}
