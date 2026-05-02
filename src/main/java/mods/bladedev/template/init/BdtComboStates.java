@@ -20,7 +20,6 @@ import net.minecraftforge.registries.RegistryObject;
  * @author Arcomit
  * @since 2026-04-29
  */
-@SuppressWarnings("removal")
 public class BdtComboStates {
     public static final DeferredRegister<ComboState> COMBO_STATES =
             DeferredRegister.create(ComboState.REGISTRY_KEY, BladeDevTemplateMod.MODID);
@@ -37,14 +36,6 @@ public class BdtComboStates {
                     .addTickAction(UserPoseOverrider::resetRot)
                     .addHitEffect(StunManager::setStun)
                     ::build);
-
-    private static final ResourceLocation PLAYER_ANIM_LOCATION = new ResourceLocation(SlashBlade.MODID,
-            "model/pa/player_motion.vmd");
-    public static void initPlayerAnimation() {
-        PlayerAnimationOverrider.getInstance().getAnimation().put(
-                SA_TEMPLATE.getId(),
-                new VmdAnimation(PLAYER_ANIM_LOCATION, 1100, 1132, false).setBlendLegs(false));
-    }
 
     public static void register(IEventBus modEventBus) {
         COMBO_STATES.register(modEventBus);
