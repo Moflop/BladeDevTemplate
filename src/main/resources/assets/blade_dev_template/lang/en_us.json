@@ -1,0 +1,10 @@
+{
+  // 这是一个示例语言文件，您可以根据需要进行修改和扩展。
+  "item_group.blade_dev_template.tab": "「ExampleSlashBladeCreativeTab」",
+  "item.blade_dev_template.template": "§b「ExampleSlashBlade:p」",
+  "blade_dev_template.sword_type.example": "example",
+  "blade_dev_template.sword_type.example_2": "example2",
+
+  "slash_art.blade_dev_template.template": "§lExampleSA",
+  "se.blade_dev_template.heal": "§lHeal"
+}

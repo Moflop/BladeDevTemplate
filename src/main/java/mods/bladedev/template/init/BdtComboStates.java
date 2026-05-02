@@ -40,7 +40,7 @@ public class BdtComboStates {
 
     private static final ResourceLocation PLAYER_ANIM_LOCATION = new ResourceLocation(SlashBlade.MODID,
             "model/pa/player_motion.vmd");
-    private static void initPlayerAnimation() {
+    public static void initPlayerAnimation() {
         PlayerAnimationOverrider.getInstance().getAnimation().put(
                 SA_TEMPLATE.getId(),
                 new VmdAnimation(PLAYER_ANIM_LOCATION, 1100, 1132, false).setBlendLegs(false));
@@ -48,6 +48,5 @@ public class BdtComboStates {
 
     public static void register(IEventBus modEventBus) {
         COMBO_STATES.register(modEventBus);
-        initPlayerAnimation();
     }
 }
